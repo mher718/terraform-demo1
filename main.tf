@@ -49,7 +49,7 @@ resource "vsphere_virtual_machine" "vm" {
   // Provisioning
   provisioner "file" {
     source      = "scripts/setup.sh"
-    destination = "setup.sh"
+    destination = "/tmp/setup.sh"
   }
 
   //provisioner "file" {
@@ -58,7 +58,7 @@ resource "vsphere_virtual_machine" "vm" {
   //}
   provisioner "remote-exec" {
     inline = [
-      "sudo bash setup.sh"
+      "sudo bash /tmp/setup.sh"
     ]
   }
   //provisioner_user        = "administrator"

@@ -1,1 +1,1 @@
-# terraform-demo1
+# semaphore-terraform-demo1
