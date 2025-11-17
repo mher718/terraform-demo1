@@ -4,7 +4,8 @@
 
 echo "Cleaning up netplan"
 sudo mv /etc/netplan/99-netcfg-vmware.yaml /etc/netplan/01-netcfg.yaml
-sudo rm /etc/netplan/01-netcfg.yaml.BeforeVMwareCustomization
+sudo rm /etc/netplan/00*
+#sudo rm /etc/netplan/
 echo "Done"
 
 echo "Fixing /etc/resolv.conf"
