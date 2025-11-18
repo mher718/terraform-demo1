@@ -58,6 +58,7 @@ resource "vsphere_virtual_machine" "vm" {
   //}
   provisioner "remote-exec" {
     inline = [
+      "sudo chmod +x /tmp/setup.sh",
       "sudo bash /tmp/setup.sh"
     ]
   }
