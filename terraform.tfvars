@@ -49,20 +49,20 @@ vm = {
     ram  = 4096
     disk = 50
   }
-  "elmerami-demo03" = {
-    ip4  = "192.168.0.118"
-    mask = 24
-    cpu  = 2
-    ram  = 4096
-    disk = 50
-  }
-  "elmerami-demo04" = {
-    ip4  = "192.168.0.119"
-    mask = 24
-    cpu  = 2
-    ram  = 4096
-    disk = 50
-  }
+#  "elmerami-demo03" = {
+#    ip4  = "192.168.0.118"
+#    mask = 24
+#    cpu  = 2
+#    ram  = 4096
+#    disk = 50
+#  }
+#  "elmerami-demo04" = {
+#    ip4  = "192.168.0.119"
+#    mask = 24
+#    cpu  = 2
+#    ram  = 4096
+#    disk = 50
+#  }
 }
 ## DEMO
 #vm = {
