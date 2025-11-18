@@ -49,7 +49,7 @@ resource "vsphere_virtual_machine" "vm" {
   // Provisioning
   provisioner "file" {
     source      = "scripts/setup.sh"
-    destination = "/home/${var.ssh-user}/setup.sh"
+    destination = "setup.sh"
   }
 
   //provisioner "file" {
@@ -59,9 +59,8 @@ resource "vsphere_virtual_machine" "vm" {
   provisioner "remote-exec" {
     inline = [
       "sleep 30",
-      "sudo mv /home/${var.ssh-user}/setup.sh /tmp/setup.sh",
-      "sudo chmod +x /tmp/setup.sh",
-      "sudo bash /tmp/setup.sh"
+      "sudo chmod +x setup.sh",
+      "sudo bash setup.sh"
     ]
   }
   //provisioner_user        = "administrator"
