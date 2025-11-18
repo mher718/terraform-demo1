@@ -42,20 +42,20 @@ memory_hot_add_enabled = "true"
 
 # Deploy multiple VMs with different hostnames and IPs 
 vm = {
-  "elmerami-smph02" = {
+  "elmerami-demo02" = {
     ip4  = "192.168.0.117"
     mask = 24
     cpu  = 2
     ram  = 4096
     disk = 50
   }
-#  "elmerami-smph03" = {
-#    ip4  = "192.168.0.118"
-#    mask = 24
-#    cpu  = 2
-#    ram  = 4096
-#    disk = 50
-#  }
+  "elmerami-demo03" = {
+    ip4  = "192.168.0.118"
+    mask = 24
+    cpu  = 2
+    ram  = 4096
+    disk = 50
+  }
   "elmerami-demo04" = {
     ip4  = "192.168.0.119"
     mask = 24
