@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -e
+#set -e
 
 echo "Cleaning up netplan"
 sudo mv /etc/netplan/99-netcfg-vmware.yaml /etc/netplan/01-netcfg.yaml
