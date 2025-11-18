@@ -44,7 +44,7 @@ resource "vsphere_virtual_machine" "vm" {
     host     = each.value.ip4
     user     = var.ssh-user
     password = var.ssh-password
-    timeout  = "40m"
+    // timeout  = "40m"
   }
 
   // Provisioning
