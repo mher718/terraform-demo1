@@ -44,7 +44,6 @@ resource "vsphere_virtual_machine" "vm" {
     host     = each.value.ip4
     user     = var.ssh-user
     password = var.ssh-password
-    // timeout  = "40m"
   }
 
   // Provisioning
@@ -59,8 +58,6 @@ resource "vsphere_virtual_machine" "vm" {
   //}
   provisioner "remote-exec" {
     inline = [
-      // "sleep 30",
-      // "sudo chmod +x /tmp/setup.sh",
       "sudo bash /tmp/setup.sh"
     ]
   }
